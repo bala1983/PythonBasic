@@ -1,4 +1,7 @@
-k = int(input("Введить ціле число"))
-print(k)
-if k != int:
-    print("Ви ввели не ціле число, спробуйте ще раз")
+while True:
+    user_input = input('Введить ціле число')
+    if not user_input.isdigit():
+        print("Ви ввели не ціле число, спробуйте ще раз")
+    elif user_input == '0':
+        break
+
