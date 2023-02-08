@@ -4,4 +4,3 @@ while True:
         print("Ви ввели не ціле число, спробуйте ще раз")
     elif user_input == '0':
         break
-
