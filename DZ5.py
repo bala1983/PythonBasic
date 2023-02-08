@@ -1,6 +1,16 @@
+chet = 0
+nechet = 0
+counter = 0
+summa = 0
 while True:
-    user_input = input('Введить ціле число')
-    if not user_input.isdigit():
-        print("Ви ввели не ціле число, спробуйте ще раз")
-    elif user_input == '0':
+    number = int(input('Введить ціле число'))
+    summa += number
+
+    if number % 2 == 0:
+        nechet += 1
+    if number / 2 == 0:
+        chet += 1
+    if number == 0:
         break
+
+print(chet, nechet, summa)
