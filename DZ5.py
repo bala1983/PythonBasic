@@ -1,16 +1,22 @@
-chet = 0
-nechet = 0
+average = 0
 counter = 0
 summa = 0
-while True:
-    number = int(input('Введить ціле число'))
-    summa += number
+chet = 0
+nechet = 0
 
-    if number % 2 == 0:
-        nechet += 1
-    if number / 2 == 0:
-        chet += 1
+while True:
+    number = int(input('Введить ціле число: '))
     if number == 0:
         break
+    counter += 1
+    summa += number
+    average = summa / counter
 
-print(chet, nechet, summa)
+    if number % 2 == 0:
+        chet += 1
+    if number % 2 != 0:
+        nechet += 1
+
+
+print(f'Тут відоброжаються результати:  {chet}, {nechet}, {summa}, {average}')
+
