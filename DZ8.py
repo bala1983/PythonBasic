@@ -1,9 +1,13 @@
-s = input("Введіть рядок:")
-ch = input("Введіть символ:")
+s = input("Введіть рядок: ")
+ch = input("Введіть символ для пошуку: ")
 count = 0
+
 while True:
     search = s.find(ch, count)
-    count += 1
-    print(s, ch)
-    break
+    if search == -1:
+        break
+
+    count = search +1
+    print(search)
+
 
