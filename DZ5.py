@@ -7,7 +7,6 @@ ne_chet = 0
 min_value = max_value = number
 
 while True:
-    number = int(input('Введить ціле число: '))
     if number == 0:
         break
     if number < min_value:
@@ -22,5 +21,5 @@ while True:
         chet += 1
     if number % 2 != 0:
         ne_chet += 1
-
+    number = int(input('Введить ціле число: '))
 print(f'Тут відоброжаються результати:  {chet}, {ne_chet}, {summa}, {average}, {min_value}, {max_value}')
