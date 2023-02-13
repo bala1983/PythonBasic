@@ -6,5 +6,4 @@ while True:
     index = s.find(ch, index + 1)
     if index == -1:
         break
-    print(index, end=" ")
-
+    print(ch, end=" ")
