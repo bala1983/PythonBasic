@@ -8,3 +8,13 @@ for num in range(1, len(list1)-1):  # числа
         # 3и, это число 4 > 3-1 = 2и, а 2и = 0 and 3+1 =4и, а 4и = 5
         counter += 1
 print("Кількість елементів ", counter)
+
+
+
+list1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+k = 5
+#1list1 = list1[:k] + list1[k+1:]
+#2b = list1[k]
+#2list1.remove(b)
+#3del list1[k]
+print(list1)
