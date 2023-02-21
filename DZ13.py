@@ -1,0 +1,5 @@
+d = {
+  'apple': ['malum', 'pomum', 'popula'],
+  'fruit': ['baca', 'bacca', 'popum'],
+  'punishment': ['malum', 'multa']
+}
