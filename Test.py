@@ -151,3 +151,64 @@
 #         print("Черный ")
 #     if 1 < nomer_karmana <= 10 and nomer_karmana % 2 != 0:
 #         print("Красный ")
+
+#
+# height = int(input("Введите высоту треугольника: "))
+#
+# for row in range(height):
+#     for col in range(height*2-1):
+#         if col >= height-1-row and col <= height-1+row:
+#             print('* ', end='')
+#         else:
+#             print('  ', end='')
+#     print()
+#
+# for i in range(height):
+#     for x in range(height*2-1):
+#         if i == x or i == height*2-2-x or x == height-1:
+#             print('* ', end='')
+#         else:
+#             print('  ', end='')
+#     print()
+#
+#
+#
+# height = int(input("Введите высоту треугольника: "))
+#
+#
+# for row in range(height):
+#     for col in range(height*2-1):
+#         if col >= height-1-row and col <= height-1+row:
+#             print('* ', end='')
+#         else:
+#             print('  ', end='')
+#     print()
+#
+#
+# for row in range(height-2, -1, -1):
+#     for col in range(height*2-1):
+#         if col == height-1-row or col == height-1+row:
+#             print('* ', end='')
+#         else:
+#             print('  ', end='')
+#     print()
+
+
+h = int(input("Введить висоту фігури: "))
+
+for i in range(h):
+    for x in range(h*2-1):
+        if x >= h-1-i and x <= h-1+i:
+            print('* ', end='')
+        else:
+            print('  ', end='')
+    print()
+
+
+for i in range(h-2, -1, -1):
+    for x in range(h*2-1):
+        if x == h-1-i or x == h-1+i or x == h*2-2-x:
+            print('* ', end='')
+        else:
+            print('  ', end='')
+    print()
