@@ -194,21 +194,9 @@
 #     print()
 
 
-h = int(input("Введить висоту фігури: "))
-
-for i in range(h):
-    for x in range(h*2-1):
-        if x >= h-1-i and x <= h-1+i:
-            print('* ', end='')
-        else:
-            print('  ', end='')
-    print()
+text = "hello there thanks for trying my Kata"
+# words = text.split()
+# cap = [a.capitalize() for a in words]
+print(text.title())
 
 
-for i in range(h-2, -1, -1):
-    for x in range(h*2-1):
-        if x == h-1-i or x == h-1+i or x == h*2-2-x:
-            print('* ', end='')
-        else:
-            print('  ', end='')
-    print()

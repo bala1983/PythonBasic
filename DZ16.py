@@ -1,7 +1,7 @@
 h = int(input("Введить висоту фігури: "))
 
 for i in range(h):
-    for x in range(2 * h - 1):
+    for x in range(2*h-1):
         print('*' if x == h-1-i or x == h-1+i or i == h-1 else ' ', end=' ')
     print()
 

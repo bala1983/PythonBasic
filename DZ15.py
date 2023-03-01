@@ -11,5 +11,7 @@ buh = [
 #         summa += 10
 #     print("Order number: ", zakaz[0], "Price: ", round(summa, 2))
 
-summa = list(map(lambda zakaz: ("Order number: ", zakaz[0], "Price: ", round(zakaz[2]*zakaz[3] if zakaz[2]*zakaz[3] >= 100 else zakaz[2]*zakaz[3] + 10, 2)), buh))
+summa = list(map(lambda zakaz: ("Order number: ", zakaz[0], "Price: ",
+                                round(zakaz[2]*zakaz[3] if zakaz[2]*zakaz[3] >= 100
+                                      else zakaz[2]*zakaz[3] + 10, 2)), buh))
 print(summa)
