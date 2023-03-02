@@ -1,6 +1,7 @@
 # text = "Hello there thanks for trying my Kata"
 text = input("Введіть рядок: ")
 
+
 def hesh(text):
     if not text:
         raise AttributeError("text must be")
