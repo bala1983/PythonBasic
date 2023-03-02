@@ -3,7 +3,8 @@ num = int(input("Введить число "))
 
 def expanded_form(num):
     if num <= 0:
-        return "zero division"
+        raise ZeroDivisionError("zero division")
+        # return "zero division"
     number = str(num)
     if num <= 9:
         return num

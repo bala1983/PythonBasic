@@ -192,11 +192,3 @@
 #         else:
 #             print('  ', end='')
 #     print()
-
-
-text = "hello there thanks for trying my Kata"
-# words = text.split()
-# cap = [a.capitalize() for a in words]
-print(text.title())
-
-

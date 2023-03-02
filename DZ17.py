@@ -3,7 +3,8 @@ num = int(input("Введить число "))
 
 def number_collaps(num):
     if num <= 0:
-        return "zero division"
+        raise ZeroDivisionError("zero division")
+        # return "zero division"
 
     number = str(num)
     list1 = []

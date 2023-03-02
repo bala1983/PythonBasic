@@ -1,9 +1,10 @@
-text = "Hello there thanks for trying my Kata"
-
+# text = "Hello there thanks for trying my Kata"
+text = input("Введіть рядок: ")
 
 def hesh(text):
     if not text:
-        return "str"
+        raise AttributeError("text must be")
+        # return "str"
     if len(text) > 140:
         return False
     words = text.split()
