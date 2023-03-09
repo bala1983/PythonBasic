@@ -39,8 +39,6 @@
 #   ]
 
 
-
-
 # s = input('stroka')
 # b = input('simvol')
 # c = list(s)
@@ -126,7 +124,7 @@
 # ОТ 0 ДО 36
 
 
-#nomer_karmana = int(input("ввести номер кармана: "))
+# nomer_karmana = int(input("ввести номер кармана: "))
 # if nomer_karmana == 0:
 #     print("Зеленый ",)
 # if 1 < nomer_karmana <= 10 and nomer_karmana % 2 == 0:
@@ -192,3 +190,14 @@
 #         else:
 #             print('  ', end='')
 #     print()
+
+# l = [3, 4, 3, 6]
+# l = set(l)
+# def sum_no_duplicates(l):
+#     l1 = []
+#     for i in l:
+#         if i not in l:
+#             l1.append(i)
+#
+#
+# print(sum_no_duplicates(l))
