@@ -28,4 +28,3 @@ counter = Counter(start=0, min_value=0, max_value=10)
 counter.increment()
 value = counter.rotation()
 print(value)
-
