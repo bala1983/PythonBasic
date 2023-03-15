@@ -1,17 +1,16 @@
 import random
 
-M = int(input('Zadai chsilo ryad i stolb '))
+M = int(input("Введіть матрицю МхМ "))
 
 
 def sort_matrix(M):
     # if M < 6:
-    #     raise ValueError("Plohoe chislo")
+    #     raise ValueError("Введіть матрицю МхМ ")
 
     random_numbers = [[random.randint(1, 50) for i in range(M)] for j in range(M)]
     summa_of_stolb = [sum(column) for column in zip(*random_numbers)]
 
-
-    print("Ne sort matriza")
+    print("Несортованная матриця")
     for row in random_numbers:
         for element in row:
             print("{:<4}".format(element), end="")
@@ -19,20 +18,16 @@ def sort_matrix(M):
     for q in summa_of_stolb:
         print("{:<4}".format(q), end="")
 
-
     summa_dict = {}
     for j in range(M):
         summa_dict[j] = summa_of_stolb[j]
-
 
     sorted_summa_dict = {}
     for i in range(M):
         min_key = min(summa_dict, key=summa_dict.get)
         sorted_summa_dict[min_key] = summa_dict.pop(min_key)
 
-
     sorted_numbers = [[random_numbers[i][j] for j in sorted_summa_dict.keys()] for i in range(M)]
-
 
     for j in range(M):
         if j % 2 == 0:
@@ -52,9 +47,7 @@ def sort_matrix(M):
                     k -= 1
                 sorted_numbers[k + 1][j] = key_item
 
-
-
-    print("\nSort matriza")
+    print("\nСортованная матриця")
     for row in sorted_numbers:
         for element in row:
             print("{:<4}".format(element), end="")
