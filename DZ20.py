@@ -4,8 +4,8 @@ M = int(input("Введіть матрицю МхМ "))
 
 
 def sort_matrix(M):
-    # if M < 6:
-    #     raise ValueError("Введіть матрицю МхМ ")
+    if M < 6:
+        raise ValueError("Введіть матрицю МхМ ")
 
     random_numbers = [[random.randint(1, 50) for i in range(M)] for j in range(M)]
     summa_of_stolb = [sum(column) for column in zip(*random_numbers)]
