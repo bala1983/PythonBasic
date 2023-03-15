@@ -16,7 +16,7 @@ class Counter:
 
     def increment(self):
         if self.current_value < self.max:
-            self.current_value +=1
+            self.current_value += 1
         else:
             print("Max Value ", max)
 
